@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Flask App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <img src="/static/images/usericon.png">
+    <br>
+    <h1>Hello this is a simple flask app</h1>
+    <form action="variable1" method="post">
+        <p>What is your name?</p>
+        <br>
+        <input type="text" name="name_input">
+        <br>
+        <p>How old are you?</p>
+        <br>
+        <input type="text" name="age_input">
+        <br>
+        <input type="submit" value="Save/Display" id="btnsubmit">
+
+
+    </form>
+
+</body>
+</html>

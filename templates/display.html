@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is the display page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+<!--Communicating with the main.py getting message to display after button click-->
+  {% for message in get_flashed_messages()%}
+            <p>{{message}}</p>
+        {% endfor %}
+
+<a href="{{url_for('btnback')}}">Back</a>
+</body>
+</html>

@@ -7,7 +7,7 @@ app.secret_key = os.urandom(24)
 
 
 # call the index.html template when the url is http://localhost:5000/
-@app.route("/index")
+@app.route("/")
 def index():
     return render_template("index.html")
 
